@@ -1,0 +1,1 @@
+# ysepeti-django-assignment
