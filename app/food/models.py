@@ -2,12 +2,16 @@ from django.db import models
 
 
 class Category(models.Model):
-    id = models.PositiveIntegerField(primary_key=True, auto_created=True)
     name = models.CharField(max_length=127)
+
+    def __str__(self):
+        return self.name
 
 
 class Food(models.Model):
     name = models.CharField(max_length=127)
-    category = models.ForeignKey(
-        Category, on_delete=models.DO_NOTHING, related_name="categories", blank=True, null=True
-    )
+    categories = models.ManyToManyField(Category)
+
+    def __str__(self):
+        return self.name
+

@@ -2,3 +2,4 @@ Django
 djangorestframework
 pyscopg2
 wsgi
+uuid
