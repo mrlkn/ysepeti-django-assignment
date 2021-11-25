@@ -1,4 +1,5 @@
 from django.urls import path
+from rest_framework.urlpatterns import format_suffix_patterns
 
 from app.restaurant import views
 
@@ -17,3 +18,5 @@ urlpatterns = [
          name="restaurant-restaurant"
     )
 ]
+
+urlpatterns = format_suffix_patterns(urlpatterns)
