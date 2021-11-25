@@ -44,7 +44,8 @@ LIB_APPS = [
 ]
 
 PROJECT_APPS = [
-    'user.apps.UserConfig'
+    'user.apps.UserConfig',
+    'food.apps.FoodConfig'
 ]
 
 
