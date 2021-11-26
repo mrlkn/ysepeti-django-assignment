@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-)-fg4qk1k_t$d)o+slcv%f!m-fz&@bc#mcr-dog%tn%m%r7%)7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'app.yemeksepeti.urls'
+ROOT_URLCONF = 'yemeksepeti.urls'
 
 TEMPLATES = [
     {
@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'app.yemeksepeti.wsgi.application'
+WSGI_APPLICATION = 'yemeksepeti.wsgi.application'
 
 
 # Database
@@ -82,11 +82,11 @@ WSGI_APPLICATION = 'app.yemeksepeti.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': os.getenv('POSTGRES_HOST', '127.0.0.1'),
-        'PORT': os.getenv('POSTGRES_PORT', '5432'),
-        'USER': os.getenv('POSTGRES_USER', 'postgres'),
-        'PASSWORD': os.getenv('POSTGRES_PASSWORD', 'postgres'),
-        'NAME': os.getenv('POSTGRES_DB', 'yemeksepeti_db'),
+        'HOST': 'db',
+        'PORT': '5432',
+        'USER': 'yemeksepeti',
+        'PASSWORD': 'yemeksepeti',
+        'NAME': 'yemeksepeti',
     }
 }
 
