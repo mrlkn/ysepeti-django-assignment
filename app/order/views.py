@@ -7,11 +7,11 @@ from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework import viewsets
 
-from order import choices
-from order.helpers import UUIDEncoder
-from order.models import Order
-from order.serializers import OrderSerializer
-from order.helpers import redis_cli, order_pubsub
+from app.order import choices
+from app.order.helpers import UUIDEncoder
+from app.order.models import Order
+from app.order.serializers import OrderSerializer
+from app.order.helpers import redis_cli, order_pubsub
 
 
 class OrderView(viewsets.ModelViewSet):

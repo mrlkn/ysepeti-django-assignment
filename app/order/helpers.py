@@ -16,6 +16,6 @@ class UUIDEncoder(json.JSONEncoder):
 
 # very bad implementation of redis pub/sub
 
-redis_cli = redis.Redis(host='redis', port=6379, db=0)
+redis_cli = redis.Redis(host='localhost', port=6379, db=0)
 order_pubsub = redis_cli.pubsub()
 order_pubsub.subscribe('orders')

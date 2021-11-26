@@ -2,8 +2,8 @@ from rest_framework import viewsets
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import AllowAny
 
-from user import serializers
-from user.models import UserProfile
+from app.user import serializers
+from app.user.models import UserProfile
 
 
 class UserViewSet(viewsets.ModelViewSet):
