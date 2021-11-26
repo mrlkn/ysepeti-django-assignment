@@ -36,4 +36,4 @@ Configuration can be found in `app/mypy.ini`
 Again after attaching to the docker container you can check it with `mypy .`
 
 ## Tests
-Keep in mind that this project has been done under 24 hours due to some circumstances and because of that it is missing tests unfortunately
+Project has been done under 24 hours so I may have missed the tests unfortunately...
