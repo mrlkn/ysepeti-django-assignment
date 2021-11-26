@@ -1,7 +1,7 @@
 from django.urls import path
 from rest_framework.urlpatterns import format_suffix_patterns
 
-from app.food import views
+from food import views
 
 urlpatterns = [
     path('food/', views.FoodViewSet.as_view({
