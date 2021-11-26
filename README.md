@@ -1,6 +1,6 @@
 ### Note from dev:
 
-__Normally I started this project with Flask, Pydantic and SQL Alchemy. I was writing all the SQL queries, validations, serializations and more yet it didn't finish in time of course and even with the extra time it was not going to finish, so I started a Django app the day before sending the assingment and developed this one.
+__Normally I started this project with Flask, Pydantic and SQL Alchemy. I was writing all the SQL queries, validations, serializations and more yet it didn't finish in time of course and even with the extra time it was not going to finish, so I started a Django app the day before sending the assingment and developed this one.___
 
 __Because of this sitaution, I finished django project in very short amount of time so it lacks tests unfortunately.. I am planning to add them at this weekend cause I hate code without test.__
 __You can follow the development progress via commits and PR's___
