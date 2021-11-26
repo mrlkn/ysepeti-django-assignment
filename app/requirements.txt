@@ -1,5 +1,10 @@
 Django
 djangorestframework
-pyscopg2
-wsgi
+psycopg2
 uuid
+redis
+flake8
+mypy
+wemake-python-styleguide
+django-stubs
+djangorestframework-stubs
