@@ -2,9 +2,9 @@ from typing import Dict, Any
 
 from rest_framework import serializers
 
-from app.food.models import Food
-from app.food.serializers import FoodCreateSerializer
-from app.order.models import Order
+from food.models import Food
+from food.serializers import FoodCreateSerializer
+from order.models import Order
 
 
 class OrderSerializer(serializers.ModelSerializer):
