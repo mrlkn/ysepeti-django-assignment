@@ -2,8 +2,8 @@ from rest_framework import viewsets
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import AllowAny
 
-from restaurant import serializers
-from restaurant.models import Restaurant
+from app.restaurant import serializers
+from app.restaurant.models import Restaurant
 
 
 class RestaurantViewSet(viewsets.ModelViewSet):

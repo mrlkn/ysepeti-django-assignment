@@ -1,7 +1,7 @@
 import uuid as uuid
 from django.db import models
 
-from food.models import Food, Category
+from app.food.models import Food, Category
 
 
 class Restaurant(models.Model):
