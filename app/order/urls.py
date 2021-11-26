@@ -1,7 +1,7 @@
 from django.urls import path
 from rest_framework.urlpatterns import format_suffix_patterns
 
-from app.order import views
+from order import views
 
 urlpatterns = [
     path('order/', views.OrderView.as_view({

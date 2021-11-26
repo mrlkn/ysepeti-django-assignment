@@ -1,9 +1,9 @@
 from django.db import models
 
-from app.food.models import Food
-from app.order import choices
-from app.restaurant.models import Restaurant
-from app.user.models import UserProfile
+from food.models import Food
+from order import choices
+from restaurant.models import Restaurant
+from user.models import UserProfile
 
 
 class Order(models.Model):
