@@ -11,5 +11,3 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = UserProfile.objects.all()
     pagination_class = PageNumberPagination
     permission_classes = [AllowAny]
-
-
