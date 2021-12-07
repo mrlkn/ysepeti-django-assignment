@@ -49,6 +49,16 @@ class OrderView(viewsets.ModelViewSet):
 
     @action(detail=True, methods=["POST"], name="process-order")
     def process_order(self, request: Request, *args, **kwargs) -> Response:
+        """
+        POST API to process orders.
+
+        After getting POST request, it gets the messages from the subscribed PUB/SUB. Ignoring if the
+        order["data"] = 1 because it means subscribed message. After finding the Order changing its status to completed.
+        :param request: Request
+        :param args: args
+        :param kwargs: kwargs
+        :return: Response
+        """
         order = order_pubsub.get_message()
         if order and not order['data'] == 1:
             order = json.loads(order["data"])
